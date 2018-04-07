@@ -1,6 +1,6 @@
 import 'package:TransactionScript/TechnicalService/DBService.dart';
 
-class TransactionScript1 {
+class TransactionScript3 {
 
   run(){
     DBService.query("sql");

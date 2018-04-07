@@ -6,6 +6,12 @@ import 'Command/SomeConcreteCommand1.dart';
 import 'Command/SomeConcreteCommand2.dart';
 import 'Command/UnknownCommand.dart';
 
+
+/**
+ * URIからコマンドを決定する。
+ * コマンドを初期化する。
+ * コマンドに処理を依頼する。
+ */
 class FrontController {
 
   doGET(Uri request, Future<Map> response) {

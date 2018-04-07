@@ -12,6 +12,7 @@ class FrontController {
 
     FrontCommand command = _getCommand(request);
     command.init(request, response);
+
     command.process();
 
   }
@@ -23,13 +24,15 @@ class FrontController {
       return _getCommandClass(request);
 
     } catch (e) {
-      //throw new FormatException('EXPECTED AT LEAST 1 SECTION');
-      rethrow; // Allow callers to see the exception.
+      throw new Exception('Error: CANNOT CREATE COMMAND CLASS!');
+      //rethrow; // Allow callers to see the exception.
     }
   }
 
 
   FrontCommand _getCommandClass(Uri request) {
+
+    //TODO: InstanceMirrorを使ったリフレクションの仕組みで実装を試みる
 
     if(request.host.contains("itunes")){
       return new SomeConcreteCommand1();

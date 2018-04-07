@@ -5,7 +5,8 @@ class SomeConcreteCommand2 extends FrontCommand {
 
 
   void init(Uri request, Future<Map> response){
-
+    myRequest = request;
+    myResponse = response;
   }
 
   void process() {

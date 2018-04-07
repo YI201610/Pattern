@@ -29,6 +29,8 @@ touch main.dart
     echo "}"
 } > main.dart
 
+mkdir lib
+
 echo "[✓] directory: ${itemName} created."
 
 exit

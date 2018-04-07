@@ -17,6 +17,11 @@ touch README.md
     echo "#" ${itemName}
 } > README.md
 
+touch pubspec.yaml
+{
+    echo "name:" ${itemName}
+} > pubspec.yaml
+
 echo "[✓] directory: ${itemName} created."
 
 exit

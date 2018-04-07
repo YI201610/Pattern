@@ -1,5 +1,5 @@
-import 'FrontController.dart';
 import 'dart:async';
+import 'package:FrontController/Application/FrontController.dart';
 
 main() {
 

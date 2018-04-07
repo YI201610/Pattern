@@ -1,10 +1,10 @@
 import 'dart:async';
 import 'dart:mirrors';
 
-import 'Command/FrontCommand.dart';
-import 'Command/SomeConcreteCommand1.dart';
-import 'Command/SomeConcreteCommand2.dart';
-import 'Command/UnknownCommand.dart';
+import 'package:FrontController/Domain/Command/FrontCommand.dart';
+import 'package:FrontController/Domain/Command/SomeConcreteCommand1.dart';
+import 'package:FrontController/Domain/Command/SomeConcreteCommand2.dart';
+import 'package:FrontController/Domain/Command/UnknownCommand.dart';
 
 
 /**
@@ -19,7 +19,8 @@ class FrontController {
     FrontCommand command = _getCommand(request);
     command.init(request, response);
 
-    command.process();
+    int resultCode = command.process();
+    _forward(resultCode);
 
   }
 
@@ -50,8 +51,8 @@ class FrontController {
 
   }
 
-
-
-
-
+  _forward(int code) {
+    //
+    print('forward...');
+  }
 }

@@ -1,15 +1,16 @@
 import 'dart:async';
 import 'FrontCommand.dart';
 
-class SomeConcreteCommand1 extends FrontCommand {
+class UnknownCommand extends FrontCommand {
 
   void init(Uri request, Future<Map> response){
     myRequest = request;
     myResponse = response;
   }
 
-  void process() {
+  int process() {
     print(runtimeType);
+    return 0;
   }
 
 }

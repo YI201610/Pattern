@@ -6,6 +6,6 @@ abstract class FrontCommand {
   Future<Map> myResponse;
 
   void init(Uri request, Future<Map> response);
-  void process();
+  int process();
 
 }

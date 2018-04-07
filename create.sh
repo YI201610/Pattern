@@ -22,6 +22,13 @@ touch pubspec.yaml
     echo "name:" ${itemName}
 } > pubspec.yaml
 
+touch main.dart
+{
+    echo "main() {"
+    echo "print('done.');"
+    echo "}"
+} > main.dart
+
 echo "[✓] directory: ${itemName} created."
 
 exit

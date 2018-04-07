@@ -1,10 +1,10 @@
 import 'dart:async';
 import 'dart:mirrors';
 
-import 'FrontCommand.dart';
-import 'SomeConcreteCommand1.dart';
-import 'SomeConcreteCommand2.dart';
-import 'UnknownCommand.dart';
+import 'Command/FrontCommand.dart';
+import 'Command/SomeConcreteCommand1.dart';
+import 'Command/SomeConcreteCommand2.dart';
+import 'Command/UnknownCommand.dart';
 
 class FrontController {
 
@@ -33,7 +33,7 @@ class FrontController {
 
     if(request.host.contains("itunes")){
       return new SomeConcreteCommand1();
-    } else if (request.host == "google") {
+    } else if (request.host.contains("google")) {
       return new SomeConcreteCommand2();
     } else {
       return new UnknownCommand();

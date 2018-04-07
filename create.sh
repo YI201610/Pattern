@@ -15,7 +15,6 @@ cd ${itemName}
 touch README.md
 {
     echo "#" ${itemName}
-    echo "-"
 } > README.md
 
 echo "[✓] directory: ${itemName} created."

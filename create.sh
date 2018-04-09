@@ -39,6 +39,8 @@ chmod +x ./run.sh
 
 mkdir lib
 
+pub get
+
 echo "[✓] directory: ${itemName} created."
 
 exit

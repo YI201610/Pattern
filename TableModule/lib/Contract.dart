@@ -3,8 +3,7 @@ import 'package:TableModule/DataSet.dart';
 
 class Contract extends TableModule {
 
-  Contract(DataSet dataSet, String tableName) {
-    super(dataSet, tableName);
+  Contract(DataSet dataSet) : super(dataSet, 'Contacts') {
 
   }
 }

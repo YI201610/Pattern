@@ -29,7 +29,17 @@ touch main.dart
     echo "}"
 } > main.dart
 
+touch run.sh
+{
+    echo "#!/bin/sh"
+    echo "dart main.dart"
+} > run.sh
+
+chmod +x ./run.sh
+
 mkdir lib
+
+pub get
 
 echo "[✓] directory: ${itemName} created."
 

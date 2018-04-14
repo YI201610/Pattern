@@ -3,7 +3,7 @@ import 'package:TableModule/Contract.dart';
 
 main() {
 
-  DataSet hoge;
+  DataSet hoge = new DataSet();
   Contract a = new Contract(hoge);
 
   print(a);

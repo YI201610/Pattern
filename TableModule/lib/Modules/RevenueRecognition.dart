@@ -10,7 +10,7 @@ class RevenueRecognition extends TableModule {
   someMethod() {
 
     //Table Data Gatewayを使用して、DB操作...
-    table.someMethod();
+    table.someMethod(this.toString());
 
 
   }

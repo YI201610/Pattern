@@ -10,7 +10,7 @@ class Contract extends TableModule {
   int calculateRecognitions(String identifier) {
 
     //Table Data Gatewayを使用して、DB操作...
-    table.someMethod();
+    table.someMethod(this.toString());
 
     return 200;
   }

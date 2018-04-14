@@ -11,7 +11,7 @@ class Product extends TableModule {
   String getProductType(String identifier) {
 
     //Table Data Gatewayを使用して、DB操作...
-
+    table.someMethod(this.toString());
 
     return 'Sample Product Type';
   }

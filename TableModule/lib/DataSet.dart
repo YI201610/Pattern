@@ -1,11 +1,12 @@
-import 'package:TableModule/DataTable.dart';
+import 'package:TableModule/TableDataGateway.dart';
 
+/*DBテーブルと、対応するTable Data Gatewayの対応づけを定義するMap*/
 class DataSet {
 
-  Map<String, DataTable> tables = {
-    'Contacts' : new DataTable(),
-    'tableB' : new DataTable(),
-    'tableC' : new DataTable(),
+  Map<String, TableDataGateway> tables = {
+    'Contacts' : new TableDataGateway(),
+    'Products' : new TableDataGateway(),
+    'RevenueRecognitions' : new TableDataGateway(),
   };
 
 }

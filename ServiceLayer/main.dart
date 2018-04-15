@@ -1,3 +1,8 @@
+import 'package:ServiceLayer/ApplicationService.dart';
+
 main() {
-print('done.');
+
+  ApplicationService a = new ApplicationService();
+  print(a);
+  print('done.');
 }

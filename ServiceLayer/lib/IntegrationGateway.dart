@@ -1,3 +1,5 @@
 abstract class IntegrationGateway {
-  publishRevenueRecognitionCalculation(String contract);
+
+  publishRevenueRecognitionCalculation(String contractBuffer);
+
 }

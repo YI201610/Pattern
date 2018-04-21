@@ -32,6 +32,7 @@ touch main.dart
 touch run.sh
 {
     echo "#!/bin/sh"
+    echo "clear"
     echo "dart main.dart"
 } > run.sh
 

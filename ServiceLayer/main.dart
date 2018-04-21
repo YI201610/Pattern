@@ -1,4 +1,4 @@
-import 'package:ServiceLayer/RecognitionService.dart';
+import 'package:ServiceLayer/Application/RecognitionService.dart';
 import 'package:ServiceLayer/Domain/Money.dart';
 
 main() {

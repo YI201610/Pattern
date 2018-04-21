@@ -1,4 +1,4 @@
-import 'package:ServiceLayer/ApplicationService.dart';
+import 'package:ServiceLayer/Application/ApplicationService.dart';
 import 'package:ServiceLayer/Domain/Contract.dart';
 import 'package:ServiceLayer/Domain/Money.dart';
 

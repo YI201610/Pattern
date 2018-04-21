@@ -1,4 +1,4 @@
-import 'package:ServiceLayer/EmailGateway.dart';
+import 'package:ServiceLayer/TechnicalService/EmailGateway.dart';
 
 class ConcreteEmailGateway implements EmailGateway {
 
